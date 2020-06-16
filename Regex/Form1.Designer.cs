@@ -48,12 +48,9 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -242,7 +239,7 @@
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
             this.textBox7.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox7.Size = new System.Drawing.Size(313, 300);
+            this.textBox7.Size = new System.Drawing.Size(313, 330);
             this.textBox7.TabIndex = 9;
             // 
             // textBox6
@@ -253,7 +250,7 @@
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox6.Size = new System.Drawing.Size(471, 300);
+            this.textBox6.Size = new System.Drawing.Size(471, 330);
             this.textBox6.TabIndex = 8;
             // 
             // tableLayoutPanel1
@@ -274,6 +271,17 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(799, 53);
             this.tableLayoutPanel1.TabIndex = 18;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(679, 15);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(117, 26);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Копировать";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -321,47 +329,8 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(796, 326);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(796, 356);
             this.tableLayoutPanel3.TabIndex = 20;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(679, 15);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 26);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Копировать";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 505);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(154, 13);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "Автор Евгений Вишневецкий";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(200, 505);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(166, 13);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "Почта для связи jon_vy@mail.ru\r\n";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(372, 502);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(131, 22);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "Скопировать почту";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -369,9 +338,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(799, 527);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -389,7 +355,6 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -417,9 +382,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button3;
     }
 }
 
